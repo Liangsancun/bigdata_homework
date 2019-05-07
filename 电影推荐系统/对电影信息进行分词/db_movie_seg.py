@@ -147,7 +147,7 @@ if __name__ == '__main__':
     stop_words = load_stopwords(r'I:\python小技巧\stopwords.txt')
     print('加载停用词表成功')
     print('处理电影数据..')
-    # 处理从数据库获取的信息
+    # 处理从数据库获取的信息,进行分词
     txt = deal_db_info(res, stop_words)
 
     # 保存最后的信息
