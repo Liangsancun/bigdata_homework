@@ -147,3 +147,6 @@ if __name__ == '__main__':
     res = cur.execute('select * from keyword_syn')
     print(cur.fetchmany(5))
     print('总条目数：%d'%(res))
+
+    cur.close()
+    conn.close()

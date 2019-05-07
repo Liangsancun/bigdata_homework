@@ -125,6 +125,9 @@ if __name__ == '__main__':
     # 插入数据
     insert_to_reverse_index(cur,conn,sql_insert,data,5000)
 
+    cur.close()
+    conn.close()
+
 
 
 
