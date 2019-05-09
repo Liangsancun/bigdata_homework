@@ -136,7 +136,7 @@ if __name__ == '__main__':
 
 
     # mysql插入语句
-    sql_insert = 'insert into keyword_syn values(%s,%s)'
+    sql_insert = 'insert ignore into keyword_syn values(%s,%s)'
     # 插入数据
     insert_to_keyword_syn(cur,conn,sql_insert,data,5000)
 
